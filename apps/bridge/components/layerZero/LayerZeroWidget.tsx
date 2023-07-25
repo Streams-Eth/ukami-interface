@@ -44,7 +44,7 @@ export const LayerZeroWidget = ({ theme }: { theme: PancakeTheme }) => {
         }
 
         .dark [id^='radix-'] {
-          background-color: #27262c;
+          background-color: #0a1a39;
         }
 
         .light [id^='radix-'] {
@@ -57,9 +57,9 @@ export const LayerZeroWidget = ({ theme }: { theme: PancakeTheme }) => {
 
         .css-1ay9vb9 .css-9k6lzc-LzButton,
         .css-1ay9vb9 .css-1s9mcc4-LzButton {
-          border: 1px solid #1fc7d4;
+          border: 1px solid #d62e24;
           border-radius: 8px;
-          color: #1fc7d4;
+          color: #d62e24;
           background: transparent;
         }
 

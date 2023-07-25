@@ -10,10 +10,10 @@ const Container = styled(Flex)`
   padding: 12px;
   align-items: center;
   background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)),
-    linear-gradient(180deg, #8051d6 0%, #492286 100%);
+    linear-gradient(180deg, #72000c 0%, #220000 100%);
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
-    background: linear-gradient(180deg, #8051d6 0%, #492286 100%);
+    background: linear-gradient(180deg, #72000c  0%, #220000 100%);
   }
 `
 
@@ -28,7 +28,7 @@ const SpeechBubble = styled.div`
   background: rgba(39, 38, 44, 0.4);
   border-radius: 16px;
   padding: 8px;
-  width: 60%;
+  /* width: 60%; */
   height: 80%;
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://pancakeswap.finance'
+const domain = 'https://app.ukami.io'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
@@ -48,7 +48,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
     const warningText = t("please make sure you're visiting %domain% - check the URL carefully.", { domain })
-    return warningText.split(/(https:\/\/pancakeswap.finance)/g)
+    return warningText.split(/(https:\/\/app.ukami.io)/g)
   }, [t])
   const warningTextComponent = (
     <>

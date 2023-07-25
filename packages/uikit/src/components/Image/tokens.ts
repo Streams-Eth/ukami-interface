@@ -2,6 +2,15 @@
  * @see https://github.com/pancakeswap/pancake-frontend/blob/develop/src/config/constants/tokens.ts
  */
 const tokens = {
+  ukami: {
+    symbol: "UKAMI",
+    address: {
+      56: "0xc07f892031861467d5551Fc8322699765311B7a3",
+      97: "",
+    },
+    decimals: 18,
+    projectLink: "https://ukami.io/",
+  },
   cake: {
     symbol: "CAKE",
     address: {

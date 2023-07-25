@@ -1,5 +1,13 @@
 import { ChainId, ERC20Token } from '@pancakeswap/sdk'
 
+export const UKAMI_MAINNET = new ERC20Token(
+  ChainId.BSC,
+  '0xc07f892031861467d5551Fc8322699765311B7a3',
+  18,
+  'UKAMI',
+  'UkamiSwap Token',
+  'https://ukami.io/',
+)
 export const CAKE_MAINNET = new ERC20Token(
   ChainId.BSC,
   '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
@@ -123,14 +131,7 @@ export const BUSD_GOERLI = new ERC20Token(
   'https://www.paxos.com/busd/',
 )
 
-export const SHDW_ETH = new ERC20Token(
-  ChainId.ETHEREUM,
-  '0x43EAdE8f5a7EC6dE8B8506Be0036Bc1BB47DbD05',
-  18,
-  'STIK',
-  'STAIKA Token',
-  'https://shadowswap.xyz/',
-)
+
 
 export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
@@ -138,6 +139,10 @@ export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.GOERLI]: BUSD_GOERLI,
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
+}
+
+export const UKAMI = {
+  [ChainId.BSC]: UKAMI_MAINNET,
 }
 
 export const CAKE = {

@@ -13,7 +13,7 @@ import { InjectedConnector } from 'wagmi/connectors/injected'
 import { hexValue } from '@ethersproject/bytes'
 
 const mappingNetwork: Record<number, string> = {
-  1116: 'eth-mainnet',
+  1: 'eth-mainnet',
   56: 'bsc-mainnet',
   97: 'bsc-testnet',
 }

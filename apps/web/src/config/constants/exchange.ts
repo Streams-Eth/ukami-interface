@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WNATIVE } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH, SHDW_ETH } from '@pancakeswap/tokens'
+import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH } from '@pancakeswap/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
@@ -8,17 +8,17 @@ export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.RINKEBY]: '0xEfF92A263d31888d860bD50809A8D171709b7b1c',
   [ChainId.GOERLI]: '0xEfF92A263d31888d860bD50809A8D171709b7b1c',
   [ChainId.BSC]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
-  [ChainId.BSC_TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
+  [ChainId.BSC_TESTNET]: '0x128Dec090c508839522353cE0415972C843CBba4',// '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
 }
 
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
-  [ChainId.ETHEREUM]: [WNATIVE[ChainId.ETHEREUM], SHDW_ETH, USDT[ChainId.ETHEREUM], WBTC_ETH],
+  [ChainId.ETHEREUM]: [WNATIVE[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
   [ChainId.RINKEBY]: [WNATIVE[ChainId.GOERLI], USDC[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
   [ChainId.GOERLI]: [WNATIVE[ChainId.RINKEBY], USDC[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.BSC]: [
     bscTokens.wbnb,
-    bscTokens.cake,
+    bscTokens.ukami,
     bscTokens.busd,
     bscTokens.usdt,
     bscTokens.btcb,
@@ -50,30 +50,30 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.ETHEREUM]: [SHDW_ETH, USDT[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], WBTC_ETH],
+  [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], WBTC_ETH],
   [ChainId.RINKEBY]: [USDC[ChainId.RINKEBY], WNATIVE[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
-  [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
+  [ChainId.BSC]: [bscTokens.busd, bscTokens.ukami, bscTokens.btcb],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  [ChainId.ETHEREUM]: [SHDW_ETH, WNATIVE[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
+  [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
   [ChainId.RINKEBY]: [USDC[ChainId.RINKEBY], WNATIVE[ChainId.RINKEBY], BUSD[ChainId.RINKEBY]],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
-  [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake],
+  [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.ukami],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.ETHEREUM]: [
-    [WNATIVE[ChainId.ETHEREUM], SHDW_ETH],
+    [WNATIVE[ChainId.ETHEREUM], USDC[ChainId.ETHEREUM]],
     [WBTC_ETH, WNATIVE[ChainId.ETHEREUM]],
     [WNATIVE[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
   ],
   [ChainId.BSC]: [
-    [bscTokens.cake, bscTokens.wbnb],
+    [bscTokens.ukami, bscTokens.wbnb],
     [bscTokens.busd, bscTokens.usdt],
     [bscTokens.dai, bscTokens.usdt],
   ],
@@ -107,12 +107,12 @@ export const INPUT_FRACTION_AFTER_FEE = ONE_HUNDRED_PERCENT.subtract(BASE_FEE)
 // BNB
 export const DEFAULT_INPUT_CURRENCY = 'BNB'
 // CAKE
-export const DEFAULT_OUTPUT_CURRENCY = '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82'
+export const DEFAULT_OUTPUT_CURRENCY = '0xc07f892031861467d5551Fc8322699765311B7a3'
 
 // Handler string is passed to Gelato to use PCS router
 export const GELATO_HANDLER = 'pancakeswap'
 export const GENERIC_GAS_LIMIT_ORDER_EXECUTION = BigNumber.from(500000)
 
-export const LIMIT_ORDERS_DOCS_URL = 'https://docs.pancakeswap.finance/products/pancakeswap-exchange/limit-orders'
+export const LIMIT_ORDERS_DOCS_URL = 'https://ukami.io'
 
 export const EXCHANGE_PAGE_PATHS = ['/swap', '/limit-orders', 'liquidity', '/add', '/find', '/remove']

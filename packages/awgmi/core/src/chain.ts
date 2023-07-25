@@ -31,11 +31,11 @@ type TestnetChain = {
 }
 
 export const mainnet: Chain = {
-  id: 1116,
+  id: 1,
   name: 'Mainnet',
   network: 'mainnet',
   nodeUrls: {
-    default: 'https://rpc.coredao.org',
+    default: 'https://fullnode.mainnet.aptoslabs.com/v1/',
     nodeReal: 'https://aptos-mainnet.nodereal.io/v1',
   },
   blockExplorers: {

@@ -71,8 +71,8 @@ export const injectedConnector = new InjectedConnector({
 export const coinbaseConnector = new CoinbaseWalletConnector({
   chains,
   options: {
-    appName: 'PancakeSwap',
-    appLogoUrl: 'https://pancakeswap.com/logo.png',
+    appName: 'UkamiSwap',
+    appLogoUrl: 'https://app.ukami.io/logo.png',
   },
 })
 
@@ -101,7 +101,7 @@ export const metaMaskConnector = new MetaMaskConnector({
 const bloctoConnector = new BloctoConnector({
   chains,
   options: {
-    defaultChainId: 1116,
+    defaultChainId: 1,
     appId: 'e2f2f0cd-3ceb-4dec-b293-bb555f2ed5af',
   },
 })

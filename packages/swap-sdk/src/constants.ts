@@ -1,7 +1,7 @@
 import { ERC20Token } from './entities/token'
 
 export enum ChainId {
-  ETHEREUM = 1116,
+  ETHEREUM = 1,
   RINKEBY = 4,
   GOERLI = 5,
   BSC = 56,
@@ -10,34 +10,34 @@ export enum ChainId {
 
 export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 
-const FACTORY_ADDRESS_ETH = '0x326Ee96748E7DcC04BE1Ef8f4E4F6bdd54048932'
+const FACTORY_ADDRESS_ETH = '0x1097053Fd2ea711dad45caCcc45EfF7548fCB362'
 
 export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: FACTORY_ADDRESS_ETH,
   [ChainId.RINKEBY]: FACTORY_ADDRESS_ETH,
   [ChainId.GOERLI]: FACTORY_ADDRESS_ETH,
   [ChainId.BSC]: FACTORY_ADDRESS,
-  [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
+  [ChainId.BSC_TESTNET]: '0xc3843fCCCa5818666E5529563971Cb37cD874334',// '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
-const INIT_CODE_HASH_ETH = '0xcfeb1f8754759f0abe461dd409d6d501fdd73b91a848c483faa6db0faf53c3bd'
+const INIT_CODE_HASH_ETH = '0x57224589c67f3f30a6b0d7a1b54cf3153ab84563bc609ef41dfb34f8b2974d2d'
 export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.ETHEREUM]: INIT_CODE_HASH_ETH,
   [ChainId.RINKEBY]: INIT_CODE_HASH_ETH,
   [ChainId.GOERLI]: INIT_CODE_HASH_ETH,
   [ChainId.BSC]: INIT_CODE_HASH,
-  [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
+  [ChainId.BSC_TESTNET]: '0xc7216d5cd65618fd6b4e5b4cfdc4cf61a060efd0efab3594aea40cbb383aafea',//'0x8aa4ee59cbaa3297a65eabd5cf942d162d78c71a33581a8ccaf9ba5558f05d95',
 }
 
 export const WETH9 = {
   [ChainId.ETHEREUM]: new ERC20Token(
     ChainId.ETHEREUM,
-    '0x191E94fa59739e188dcE837F7f6978d84727AD01',
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     18,
-    'WCORE',
-    'Wrapped CORE',
-    ''
+    'WETH',
+    'Wrapped Ether',
+    'https://weth.io'
   ),
   [ChainId.RINKEBY]: new ERC20Token(
     ChainId.RINKEBY,
@@ -100,7 +100,7 @@ export const NATIVE: Record<
     decimals: number
   }
 > = {
-  [ChainId.ETHEREUM]: { name: 'CORE', symbol: 'CORE', decimals: 18 },
+  [ChainId.ETHEREUM]: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
   [ChainId.RINKEBY]: { name: 'Rinkeby Ether', symbol: 'RIN', decimals: 18 },
   [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
   [ChainId.BSC]: {

@@ -1,8 +1,8 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "short_name": "UkamiSwap",
+  "name": "UkamiSwap",
+  "description": "Farm CAKE with Ukami LP Tokens",
+  "homepage_url": "https://app.ukami.io",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

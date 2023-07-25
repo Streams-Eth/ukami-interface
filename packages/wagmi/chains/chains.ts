@@ -1,4 +1,4 @@
-import { rinkeby, goerli } from 'wagmi/chains'
+import { mainnet, rinkeby, goerli } from 'wagmi/chains'
 import { Chain } from 'wagmi'
 
 export const avalandche: Chain = {
@@ -115,25 +115,4 @@ export const bscTest: Chain = {
   testnet: true,
 }
 
-export const mainnet: Chain = {
-  id: 1116,
-  name: 'CORE Dao Chain',
-  network: 'core',
-  rpcUrls: {
-    public:'https://rpc.coredao.org',
-    default: 'https://rpc.coredao.org',
-  },
-  nativeCurrency: { name: 'CORE', symbol: 'CORE', decimals: 18 },
-  blockExplorers: {
-    default: {
-      name: 'CoreScan',
-      url: 'https://scan.coredao.org',
-    },
-  },
-  multicall: {
-    address: '0x024f0041b76B598c2A0a75004F8447FaF67BD004',
-    blockCreated: 1853087,
-  },
-}
-
-export { rinkeby, goerli }
+export { mainnet, rinkeby, goerli }

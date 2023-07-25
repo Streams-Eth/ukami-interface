@@ -2,31 +2,34 @@ import styled from 'styled-components'
 import { Box, Button, Flex, Heading, LinkExternal, PageHeader, NextLinkFromReactRouter } from '@pancakeswap/uikit'
 import { useAccount } from 'wagmi'
 import { useTranslation } from '@pancakeswap/localization'
-import SectionsWithFoldableText from 'components/FoldableSection/SectionsWithFoldableText'
-import PageSection from 'components/PageSection'
+// import SectionsWithFoldableText from 'components/FoldableSection/SectionsWithFoldableText'
+// import PageSection from 'components/PageSection'
 import { PageMeta } from 'components/Layout/Page'
-import { useGetCollections } from 'state/nftMarket/hooks'
-import { FetchStatus } from 'config/constants/types'
-import PageLoader from 'components/Loader/PageLoader'
-import useTheme from 'hooks/useTheme'
-import orderBy from 'lodash/orderBy'
+// import { useGetCollections } from 'state/nftMarket/hooks'
+// import { FetchStatus } from 'config/constants/types'
+// import PageLoader from 'components/Loader/PageLoader'
+// import useTheme from 'hooks/useTheme'
+// import orderBy from 'lodash/orderBy'
 import SearchBar from '../components/SearchBar'
-import Collections from './Collections'
-import Newest from './Newest'
-import config from './config'
+// import Collections from './Collections'
+// import Newest from './Newest'
+// import config from './config'
 
-const Gradient = styled(Box)`
-  background: ${({ theme }) => theme.colors.gradientCardHeader};
-`
+// const Gradient = styled(Box)`
+//   background: ${({ theme }) => theme.colors.gradientCardHeader};
+// `
 
 const StyledPageHeader = styled(PageHeader)`
   margin-bottom: -40px;
   padding-bottom: 40px;
+  background: rgba(0,0,0,0.5);
+  height:100vh;
+  text-align:center;
 `
 
 const StyledHeaderInner = styled(Flex)`
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   & div:nth-child(1) {
     order: 1;
@@ -52,20 +55,20 @@ const StyledHeaderInner = styled(Flex)`
 const Home = () => {
   const { t } = useTranslation()
   const { address: account } = useAccount()
-  const { theme } = useTheme()
-  const { data: collections, status } = useGetCollections()
+  // const { theme } = useTheme()
+  // const { data: collections, status } = useGetCollections()
 
-  const hotCollections = orderBy(
-    collections,
-    (collection) => (collection.totalVolumeBNB ? parseFloat(collection.totalVolumeBNB) : 0),
-    'desc',
-  )
+  // const hotCollections = orderBy(
+  //   collections,
+  //   (collection) => (collection.totalVolumeBNB ? parseFloat(collection.totalVolumeBNB) : 0),
+  //   'desc',
+  // )
 
-  const newestCollections = orderBy(
-    collections,
-    (collection) => (collection.createdAt ? Date.parse(collection.createdAt) : 0),
-    'desc',
-  )
+  // const newestCollections = orderBy(
+  //   collections,
+  //   (collection) => (collection.createdAt ? Date.parse(collection.createdAt) : 0),
+  //   'desc',
+  // )
 
   return (
     <>
@@ -77,18 +80,18 @@ const Home = () => {
               {t('NFT Marketplace')}
             </Heading>
             <Heading scale="lg" color="text">
-              {t('Buy and Sell NFTs on BNB Smart Chain')}
+              {t('Coming Soon')}
             </Heading>
-            {account && (
+            {/* {account && (
               <Button as={NextLinkFromReactRouter} to={`/profile/${account.toLowerCase()}`} mt="32px">
                 {t('Manage/Sell')}
               </Button>
-            )}
+            )} */}
           </div>
-          <SearchBar />
+          {/* <SearchBar /> */}
         </StyledHeaderInner>
       </StyledPageHeader>
-      {status !== FetchStatus.Fetched ? (
+      {/* {status !== FetchStatus.Fetched ? (
         <PageLoader />
       ) : (
         <PageSection
@@ -118,7 +121,7 @@ const Home = () => {
         <LinkExternal href="https://docs.pancakeswap.finance/contact-us/nft-market-applications" mx="auto" mt="16px">
           {t('Apply to NFT Marketplace!')}
         </LinkExternal>
-      </Gradient>
+      </Gradient> */}
     </>
   )
 }

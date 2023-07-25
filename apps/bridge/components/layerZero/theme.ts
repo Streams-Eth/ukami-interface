@@ -44,7 +44,7 @@ export const darkTheme = {
     },
     divider: darkColors.cardBorder,
     background: {
-      default: '#27262c',
+      default: '#0a1a39',
     },
   },
   shape: {

@@ -7,24 +7,12 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: 'https://discord.gg/svja2EyT99',
         isHighlighted: true,
       },
       {
-        label: t('Brand'),
-        href: 'https://docs.pancakeswap.finance/brand',
-      },
-      {
-        label: t('Blog'),
-        href: 'https://medium.com/pancakeswap',
-      },
-      {
-        label: t('Community'),
-        href: 'https://docs.pancakeswap.finance/contact-us/telegram',
-      },
-      {
-        label: t('Litepaper'),
-        href: 'https://v2litepaper.pancakeswap.finance/',
+        label: t('Whitepaper'),
+        href: 'http://ukami.io/wp-content/uploads/2023/07/Ukami-Whitepaper.pdf',
       },
     ],
   },
@@ -33,15 +21,11 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'https://docs.pancakeswap.finance/contact-us/customer-support',
-      },
-      {
-        label: t('Troubleshooting'),
-        href: 'https://docs.pancakeswap.finance/help/troubleshooting',
+        href: 'https://t.me/UkamiFinance',
       },
       {
         label: t('Guides'),
-        href: 'https://docs.pancakeswap.finance/get-started',
+        href: 'https://ukami.io/',
       },
     ],
   },
@@ -50,24 +34,13 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/ukami',
       },
       {
         label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://ukami.io/',
       },
-      {
-        label: t('Bug Bounty'),
-        href: 'https://docs.pancakeswap.finance/code/bug-bounty',
-      },
-      {
-        label: t('Audits'),
-        href: 'https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
-      },
-      {
-        label: t('Careers'),
-        href: 'https://docs.pancakeswap.finance/hiring/become-a-chef',
-      },
+      
     ],
   },
 ]

@@ -1,8 +1,8 @@
 # 🥞 Pancake Frontend
 
 <p align="center">
-  <a href="https://pancakeswap.finance">
-      <img src="https://pancakeswap.finance/logo.png" height="128">
+  <a href="https://app.ukami.io">
+      <img src="https://app.ukami.io/logo.png" height="128">
   </a>
 </p>
 

@@ -18,7 +18,7 @@ declare global {
 }
 
 const networkMapping: Record<string, number> = {
-  mainnet: 1116,
+  mainnet: 1,
   testnet: 2,
 }
 

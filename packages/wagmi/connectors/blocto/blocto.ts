@@ -16,7 +16,7 @@ import { getAddress } from '@ethersproject/address'
 import { ExternalProvider, Web3Provider } from '@ethersproject/providers'
 
 const chainIdToNetwork: { [network: number]: string } = {
-  1116: 'mainnet',
+  1: 'mainnet',
   3: 'ropsten',
   4: 'rinkeby',
   42: 'kovan',
