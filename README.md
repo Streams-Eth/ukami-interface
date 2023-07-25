@@ -1,4 +1,4 @@
-# 🥞 Pancake Frontend
+# Ukami Frontend
 
 <p align="center">
   <a href="https://app.ukami.io">
