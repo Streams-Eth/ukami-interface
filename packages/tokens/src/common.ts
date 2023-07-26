@@ -8,6 +8,14 @@ export const UKAMI_MAINNET = new ERC20Token(
   'UkamiSwap Token',
   'https://ukami.io/',
 )
+export const UKAMI_TESTNET = new ERC20Token(
+  ChainId.BSC,
+  '0x67C8d786580Af83A55662dd59Da9544384C8922C',
+  18,
+  'UKAMI',
+  'UkamiSwap Token',
+  'https://ukami.io/',
+)
 export const CAKE_MAINNET = new ERC20Token(
   ChainId.BSC,
   '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
@@ -143,6 +151,7 @@ export const BUSD: Record<ChainId, ERC20Token> = {
 
 export const UKAMI = {
   [ChainId.BSC]: UKAMI_MAINNET,
+  [ChainId.BSC_TESTNET]: UKAMI_TESTNET,
 }
 
 export const CAKE = {

@@ -14,10 +14,10 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 3,
-    lpSymbol: 'BUSD-CAKE LP',
-    lpAddress: '0xb98C30fA9f5e9cf6749B7021b4DDc0DBFe73b73e',
-    token: bscTestnetTokens.busd,
-    quoteToken: bscTestnetTokens.cake,
+    lpSymbol: 'UKAMI-BNB LP',
+    lpAddress: '0x358acAe8b6855A27A4E811613a8533679085C353',
+    token: bscTestnetTokens.ukami,
+    quoteToken: bscTestnetTokens.wbnb,
   },
   {
     pid: 4,

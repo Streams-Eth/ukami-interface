@@ -1,9 +1,10 @@
 import { ChainId, ERC20Token, WBNB } from '@pancakeswap/sdk'
-import { BUSD_TESTNET, CAKE_TESTNET } from './common'
+import { BUSD_TESTNET, CAKE_TESTNET, UKAMI_TESTNET } from './common'
 
 export const bscTestnetTokens = {
   wbnb: WBNB[ChainId.BSC_TESTNET],
   cake: CAKE_TESTNET,
+  ukami: UKAMI_TESTNET,
   busd: BUSD_TESTNET,
   syrup: new ERC20Token(
     ChainId.BSC_TESTNET,

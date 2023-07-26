@@ -21,7 +21,7 @@ import {
 import { ContextApi } from '@pancakeswap/localization'
 // import { nftsBaseUrl } from 'views/Nft/market/constants'
 // import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-// import { SUPPORT_ONLY_BSC } from 'config/constants/supportChains'
+ import { SUPPORT_ONLY_BSC } from 'config/constants/supportChains'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean; image?: string } & {
@@ -108,12 +108,12 @@ const config: (
       href: '/nfts',
       showItemsOnMobile: false,
       items: []
-    }
+    },
     // {
     //   label: t('Earn'),
     //   href: '/farms',
     //   icon: EarnIcon,
-    //   fillIcon: EarnFillIcon,
+    //   fillIcon: EarnFilledIcon,
     //   image: '/images/decorations/pe2.png',
     //   items: [
     //     {
