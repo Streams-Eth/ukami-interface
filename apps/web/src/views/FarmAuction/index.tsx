@@ -105,7 +105,7 @@ const FarmAuction = () => {
                 'If you’re not a whitelisted project, you won’t be able to participate, but you can still view what’s going on!',
               )}
             </Text>
-            <Link external href="#">
+            <Link external href="/">
               <Button>
                 <Text color="invertedContrast" bold fontSize="16px" mr="4px">
                   {t('Apply for a Farm/Pool')}
