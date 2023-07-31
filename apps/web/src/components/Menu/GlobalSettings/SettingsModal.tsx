@@ -8,12 +8,12 @@ import {
   PancakeToggle,
   QuestionHelper,
   Text,
-  ThemeSwitcher,
+  // ThemeSwitcher,
   Toggle,
 } from '@pancakeswap/uikit'
 import { SUPPORT_ZAP } from 'config/constants/supportChains'
 import { useActiveChainId } from 'hooks/useActiveChainId'
-import useTheme from 'hooks/useTheme'
+// import useTheme from 'hooks/useTheme'
 import { useCallback, useState } from 'react'
 import { useSwapActionHandlers } from 'state/swap/useSwapActionHandlers'
 import {
@@ -79,7 +79,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
   const [isStableSwapByDefault, setIsStableSwapByDefault] = useStableSwapByDefault()
 
   const { t } = useTranslation()
-  const { isDark, setTheme } = useTheme()
+  // const { isDark, setTheme } = useTheme()
 
   if (showConfirmExpertModal) {
     return (

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Box, Button, Flex, Heading, LinkExternal, PageHeader, NextLinkFromReactRouter } from '@pancakeswap/uikit'
-import { useAccount } from 'wagmi'
+import { /* Box, Button,*/ Flex, Heading, /* LinkExternal, */ PageHeader /* , NextLinkFromReactRouter */ } from '@pancakeswap/uikit'
+// import { useAccount } from 'wagmi'
 import { useTranslation } from '@pancakeswap/localization'
 // import SectionsWithFoldableText from 'components/FoldableSection/SectionsWithFoldableText'
 // import PageSection from 'components/PageSection'
@@ -10,7 +10,7 @@ import { PageMeta } from 'components/Layout/Page'
 // import PageLoader from 'components/Loader/PageLoader'
 // import useTheme from 'hooks/useTheme'
 // import orderBy from 'lodash/orderBy'
-import SearchBar from '../components/SearchBar'
+// import SearchBar from '../components/SearchBar'
 // import Collections from './Collections'
 // import Newest from './Newest'
 // import config from './config'
@@ -54,7 +54,7 @@ const StyledHeaderInner = styled(Flex)`
 
 const Home = () => {
   const { t } = useTranslation()
-  const { address: account } = useAccount()
+  // const { address: account } = useAccount()
   // const { theme } = useTheme()
   // const { data: collections, status } = useGetCollections()
 

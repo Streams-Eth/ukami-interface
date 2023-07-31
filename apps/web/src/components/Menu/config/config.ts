@@ -13,15 +13,15 @@ import {
   DropdownMenuItems,
   NftIcon,
   NftFillIcon,
-  PoolIcon,
-  FarmIcon,
+  // PoolIcon,
+  // FarmIcon,
   EarnFilledIcon,
   EarnIcon,
 } from '@pancakeswap/uikit'
 import { ContextApi } from '@pancakeswap/localization'
 // import { nftsBaseUrl } from 'views/Nft/market/constants'
 // import { getPerpetualUrl } from 'utils/getPerpetualUrl'
- import { SUPPORT_ONLY_BSC } from 'config/constants/supportChains'
+//  import { SUPPORT_ONLY_BSC } from 'config/constants/supportChains'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean; image?: string } & {
@@ -46,7 +46,7 @@ const config: (
   isDark: boolean,
   languageCode?: string,
   chainId?: number,
-) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) =>
+) => ConfigMenuItemsType[] = (t, /* isDark, languageCode, */ chainId) =>
   [
     {
       label: t('Swap'),
@@ -120,11 +120,11 @@ const config: (
           label: t('Farms'),
           href: '/farms',
         },
-        {
-          label: t('Pools'),
-          href: '/pools',
-          supportChainIds: SUPPORT_ONLY_BSC,
-        },
+        // {
+        //   label: t('Pools'),
+        //   href: '/pools',
+        //   supportChainIds: SUPPORT_ONLY_BSC,
+        // },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     // {

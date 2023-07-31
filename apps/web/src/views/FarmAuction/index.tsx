@@ -9,7 +9,7 @@ import NextLink from 'next/link'
 import FAQs from './components/FAQs'
 import AuctionDetails from './components/AuctionDetailsCard'
 import AuctionLeaderboard from './components/AuctionLeaderboard'
-import { FORM_ADDRESS } from './helpers'
+// import { FORM_ADDRESS } from './helpers'
 import { useCurrentFarmAuction } from './hooks/useCurrentFarmAuction'
 import AuctionTimer from './components/AuctionTimer'
 import ReclaimBidCard from './components/ReclaimBidCard'
@@ -105,7 +105,7 @@ const FarmAuction = () => {
                 'If you’re not a whitelisted project, you won’t be able to participate, but you can still view what’s going on!',
               )}
             </Text>
-            <Link external href={"#"}>
+            <Link external href="#">
               <Button>
                 <Text color="invertedContrast" bold fontSize="16px" mr="4px">
                   {t('Apply for a Farm/Pool')}
