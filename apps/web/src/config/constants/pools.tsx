@@ -61,7 +61,7 @@ export const livePools: Pool.SerializedPoolConfig<SerializedWrappedToken>[] = [
     stakingToken: bscTokens.cake,
     earningToken: bscTokens.cake,
     contractAddress: {
-      97: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
+      97: '0x0b59a6E2eCdb12E8518e75B75eFb5345783E7657',
       56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
     },
     poolCategory: PoolCategory.CORE,

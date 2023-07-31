@@ -9,8 +9,8 @@ export const UKAMI_MAINNET = new ERC20Token(
   'https://ukami.io/',
 )
 export const UKAMI_TESTNET = new ERC20Token(
-  ChainId.BSC,
-  '0x67C8d786580Af83A55662dd59Da9544384C8922C',
+  ChainId.BSC_TESTNET,
+  '0xdaF6CCd905BcD6d2cF139CA5D4908Dc726523AB4',
   18,
   'UKAMI',
   'UkamiSwap Token',

@@ -97,7 +97,7 @@ const FarmAuction = () => {
               {t('Community Farm Auction')}
             </Heading>
             <Text color="textSubtle" mb="24px">
-              {t('Each week, qualifying projects can bid CAKE for the right to host a 10-day Farm on PancakeSwap.')}
+              {t('Each week, qualifying projects can bid UKAMI for the right to host a 10-day Farm on UkamiSwap.')}
             </Text>
             <Text color="textSubtle">{t('This page is for projects to bid for farms.')}</Text>
             <Text color="textSubtle" mb="24px">
@@ -105,7 +105,7 @@ const FarmAuction = () => {
                 'If you’re not a whitelisted project, you won’t be able to participate, but you can still view what’s going on!',
               )}
             </Text>
-            <Link external href={FORM_ADDRESS}>
+            <Link external href={"#"}>
               <Button>
                 <Text color="invertedContrast" bold fontSize="16px" mr="4px">
                   {t('Apply for a Farm/Pool')}

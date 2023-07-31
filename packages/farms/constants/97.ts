@@ -7,25 +7,26 @@ const farms: SerializedFarmConfig[] = [
    */
   {
     pid: 0,
-    lpSymbol: 'CAKE',
-    lpAddress: '0x36e3E4fF6471559b19F66bD10985534d5e214D44',
+    lpSymbol: 'UKAMI',
+    lpAddress: '0xC74CcFCC16E053d66bE6194526e3ac23230337CA',
     token: bscTestnetTokens.syrup,
     quoteToken: bscTestnetTokens.wbnb,
   },
   {
-    pid: 3,
+    pid: 1,
     lpSymbol: 'UKAMI-BNB LP',
-    lpAddress: '0x358acAe8b6855A27A4E811613a8533679085C353',
-    token: bscTestnetTokens.ukami,
-    quoteToken: bscTestnetTokens.wbnb,
+    lpAddress: '0x91B41b49De13BA78c742c10D83c1E33e102822f4',
+    token: bscTestnetTokens.wbnb,
+    quoteToken: bscTestnetTokens.ukami,
   },
   {
-    pid: 4,
-    lpSymbol: 'CAKE-BNB LP',
-    lpAddress: '0xa96818CA65B57bEc2155Ba5c81a70151f63300CD',
-    token: bscTestnetTokens.cake,
-    quoteToken: bscTestnetTokens.wbnb,
+    pid: 2,
+    lpSymbol: 'BUSD-UKAMI LP',
+    lpAddress: '0x851DCDd799F94F15347724F76ad84Eb8AcD101dD',
+    token: bscTestnetTokens.ukami,
+    quoteToken: bscTestnetTokens.busd,
   },
+ 
   {
     pid: 10,
     lpSymbol: 'BNB-BUSD LP',

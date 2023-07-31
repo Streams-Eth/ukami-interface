@@ -6,7 +6,7 @@ const tokens = {
     symbol: "UKAMI",
     address: {
       56: "0xc07f892031861467d5551Fc8322699765311B7a3",
-      97: "",
+      97: "0xdaF6CCd905BcD6d2cF139CA5D4908Dc726523AB4",
     },
     decimals: 18,
     projectLink: "https://ukami.io/",
