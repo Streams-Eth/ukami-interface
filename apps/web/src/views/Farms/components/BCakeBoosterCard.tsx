@@ -15,13 +15,13 @@ import {
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from '@pancakeswap/localization'
-import Image from 'next/legacy/image'
+// import Image from 'next/legacy/image'
 import NextLink from 'next/link'
 import styled, { useTheme } from 'styled-components'
 import { useBCakeProxyContractAddress } from '../hooks/useBCakeProxyContractAddress'
 import { useUserBoosterStatus } from '../hooks/useUserBoosterStatus'
 import { useUserLockedCakeStatus } from '../hooks/useUserLockedCakeStatus'
-import boosterCardImage from '../images/boosterCardImage.png'
+// import boosterCardImage from '../images/boosterCardImage.png'
 import CreateProxyButton from './YieldBooster/components/CreateProxyButton'
 
 export const CardWrapper = styled.div`
@@ -99,9 +99,9 @@ export const BCakeBoosterCard = () => {
   })
   return (
     <CardWrapper>
-      <ImageWrapper>
+      {/* <ImageWrapper>
         <Image src={boosterCardImage} alt="boosterCardImage" width={99} height={191} placeholder="blur" />
-      </ImageWrapper>
+      </ImageWrapper> */}
       <Card p="0px" style={{ zIndex: 1 }}>
         <StyledCardBody style={{ padding: '15px 24px' }}>
           <RocketIcon />

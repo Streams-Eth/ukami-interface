@@ -29,25 +29,27 @@ const Container = styled.div`
   position: relative;
 `;
 
-const RotatingPancakeIcon = styled(PancakeIcon)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: ${rotate} 2s linear infinite;
-  transform: translate3d(0, 0, 0);
-`;
+// const RotatingPancakeIcon = styled(PancakeIcon)`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   animation: ${rotate} 2s linear infinite;
+//   transform: translate3d(0, 0, 0);
+// `;
 
-const FloatingPanIcon = styled(PanIcon)`
-  animation: ${float} 6s ease-in-out infinite;
-  transform: translate3d(0, 0, 0);
-`;
+// const FloatingPanIcon = styled(PanIcon)`
+//   animation: ${float} 6s ease-in-out infinite;
+//   transform: translate3d(0, 0, 0);
+// `;
 
 const Spinner: React.FC<React.PropsWithChildren<SpinnerProps>> = ({ size = 128 }) => {
   return (
     <Container>
-      <RotatingPancakeIcon width={`${size * 0.5}px`} />
-      <FloatingPanIcon width={`${size}px`} />
+      {/* <RotatingPancakeIcon width={`${size * 0.5}px`} />
+      <FloatingPanIcon width={`${size}px`} /> */}
+      <img width={100} src="https://i.giphy.com/media/UqUHuT6y9mK5HfsYFm/giphy.webp"/>
     </Container>
+    
   );
 };
 
