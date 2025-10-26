@@ -1,8 +1,8 @@
 {
-  "short_name": "UkamiSwap",
-  "name": "UkamiSwap",
+  "short_name": "SwapDex",
+  "name": "SwapDex",
   "description": "Farm CAKE with Ukami LP Tokens",
-  "homepage_url": "https://app.ukami.io",
+  "homepage_url": "https://swapdex.app",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

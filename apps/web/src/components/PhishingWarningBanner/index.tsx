@@ -40,7 +40,7 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://app.ukami.io'
+const domain = 'https://swapdex.app'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()

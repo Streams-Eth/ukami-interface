@@ -59,7 +59,7 @@ const Menu = (props) => {
         footerLinks={getFooterLinks}
         activeItem={activeMenuItem?.href}
         activeSubItem={activeSubMenuItem?.href}
-        buyCakeLabel={t('Buy UKAMI')}
+        buyCakeLabel={t('Buy SwapDex Token')}
         {...props}
       />
     </>
